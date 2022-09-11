@@ -8,7 +8,7 @@ class ArrayFunctions {
    * indexOf([1,2,3,5,6], 3); // 2
    */
   indexOf(arr, item) {
-    return ;
+    return arr.indexOf(item);
   }
 
   /**
@@ -20,7 +20,7 @@ class ArrayFunctions {
    */
   sum(arr) {
     // Hint: use the reduce method
-    return ;
+    return arr.reduce((i, j) => i + j, 0);
   }
 
   /**
@@ -33,7 +33,7 @@ class ArrayFunctions {
    * filter([1,2,3,5,6,2,4,2], 2); // [1,3,5,6,4]
    */
   filterOut(arr, item) {
-    return ;
+    return arr.filter(i => i !== item);
   }
 
   /**
@@ -46,6 +46,7 @@ class ArrayFunctions {
    */
   append(arr, item) {
     // hint: push, slice, splice would all work. Pay attention to the return value in the docs
+    arr.push(item);
     return arr;
   }
 
@@ -58,7 +59,7 @@ class ArrayFunctions {
    * concat([1,2,3], [4,5,6]); // [1,2,3,4,5,6]
    */
   concat(arr1, arr2) {
-    return ;
+    return arr1.concat(arr2);
   }
 
   /**
@@ -70,6 +71,6 @@ class ArrayFunctions {
    */
   square(arr) {
     // hint: use .map
-    return ;
+    return arr.map(i => i * i);
   }
 }
